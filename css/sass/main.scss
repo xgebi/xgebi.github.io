@@ -89,6 +89,8 @@ center {
 .table-of-contents {
   display: flex;
   flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 100%;
   article {
     flex: 0 0 16rem;
     margin-right: 2rem;
@@ -99,6 +101,17 @@ center {
     text-align: 1.5rem;
     text-align: center;
   }
+}
+
+@media all and (max-width: 54em) {
+  .table-of-contents{
+  max-width: 36rem;
+}
+}
+@media all and (max-width: 36em) {
+  .table-of-contents{
+  max-width: 18rem;
+}
 }
 
 .contents {
@@ -126,6 +139,7 @@ center {
   .description {
     margin: 0;
     max-width: 32rem;
+    padding: 1rem;
   }
 
   h3 {
