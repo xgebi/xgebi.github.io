@@ -101,17 +101,14 @@ center {
     text-align: 1.5rem;
     text-align: center;
   }
-}
 
-@media all and (max-width: 54em) {
-  .table-of-contents{
-  max-width: 36rem;
-}
-}
-@media all and (max-width: 36em) {
-  .table-of-contents{
-  max-width: 18rem;
-}
+  @media all and (max-width: 54em) {
+    max-width: 36rem;
+  }
+  @media all and (max-width: 36em) {
+    max-width: 16rem;
+    margin: 0 auto 2rem;
+  }
 }
 
 .contents {
